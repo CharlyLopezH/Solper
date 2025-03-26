@@ -171,3 +171,4 @@ C:\Contra\sistemas\Desarrollos\2025\Solper\SolperAPI\bin\Debug\net8.0\Swashbuckl
 C:\Contra\sistemas\Desarrollos\2025\Solper\SolperAPI\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerUI.dll
 C:\Contra\sistemas\Desarrollos\2025\Solper\SolperAPI\obj\Debug\net8.0\SolperAPI.MvcApplicationPartsAssemblyInfo.cs
 C:\Contra\sistemas\Desarrollos\2025\Solper\SolperAPI\bin\Debug\net8.0\AutoMapper.dll
+C:\Contra\sistemas\Desarrollos\2025\Solper\SolperAPI\obj\Debug\net8.0\SolperAPI.sourcelink.json

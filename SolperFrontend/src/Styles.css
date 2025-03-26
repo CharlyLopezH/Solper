@@ -1,0 +1,14 @@
+#root {
+  max-width: 95%;
+  margin: 0;
+  padding: 2rem;
+  text-align: left;
+  /* Tomado del index.css */
+  /* display: flex; */
+  /* min-width: 320px; */
+  /* min-height: 100vh; */
+}
+
+.read-the-docs {
+  color: #888;
+}
