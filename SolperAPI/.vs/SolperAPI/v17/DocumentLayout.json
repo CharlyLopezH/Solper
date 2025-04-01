@@ -3,6 +3,18 @@
   "WorkspaceRootPath": "C:\\Contra\\sistemas\\Desarrollos\\2025\\Solper\\SolperAPI\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{21E472C7-51A5-4161-8AC8-C0E3C633C24C}|SolperAPI.csproj|c:\\contra\\sistemas\\desarrollos\\2025\\solper\\solperapi\\dtos\\paginaciondto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{21E472C7-51A5-4161-8AC8-C0E3C633C24C}|SolperAPI.csproj|solutionrelative:dtos\\paginaciondto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{21E472C7-51A5-4161-8AC8-C0E3C633C24C}|SolperAPI.csproj|c:\\contra\\sistemas\\desarrollos\\2025\\solper\\solperapi\\repositorios\\repositorioadscripciones.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{21E472C7-51A5-4161-8AC8-C0E3C633C24C}|SolperAPI.csproj|solutionrelative:repositorios\\repositorioadscripciones.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{21E472C7-51A5-4161-8AC8-C0E3C633C24C}|SolperAPI.csproj|c:\\contra\\sistemas\\desarrollos\\2025\\solper\\solperapi\\endpoints\\adscripcionesendpoints.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{21E472C7-51A5-4161-8AC8-C0E3C633C24C}|SolperAPI.csproj|solutionrelative:endpoints\\adscripcionesendpoints.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{21E472C7-51A5-4161-8AC8-C0E3C633C24C}|SolperAPI.csproj|c:\\contra\\sistemas\\desarrollos\\2025\\solper\\solperapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{21E472C7-51A5-4161-8AC8-C0E3C633C24C}|SolperAPI.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -35,19 +47,58 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "PaginacionDTO.cs",
+              "DocumentMoniker": "C:\\Contra\\sistemas\\Desarrollos\\2025\\Solper\\SolperAPI\\DTOs\\PaginacionDTO.cs",
+              "RelativeDocumentMoniker": "DTOs\\PaginacionDTO.cs",
+              "ToolTip": "C:\\Contra\\sistemas\\Desarrollos\\2025\\Solper\\SolperAPI\\DTOs\\PaginacionDTO.cs",
+              "RelativeToolTip": "DTOs\\PaginacionDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-01T19:42:34.693Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "RepositorioAdscripciones.cs",
+              "DocumentMoniker": "C:\\Contra\\sistemas\\Desarrollos\\2025\\Solper\\SolperAPI\\Repositorios\\RepositorioAdscripciones.cs",
+              "RelativeDocumentMoniker": "Repositorios\\RepositorioAdscripciones.cs",
+              "ToolTip": "C:\\Contra\\sistemas\\Desarrollos\\2025\\Solper\\SolperAPI\\Repositorios\\RepositorioAdscripciones.cs",
+              "RelativeToolTip": "Repositorios\\RepositorioAdscripciones.cs",
+              "ViewState": "AgIAABYAAAAAAAAAAAA2wCYAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-01T19:37:03.751Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "AdscripcionesEndpoints.cs",
+              "DocumentMoniker": "C:\\Contra\\sistemas\\Desarrollos\\2025\\Solper\\SolperAPI\\Endpoints\\AdscripcionesEndpoints.cs",
+              "RelativeDocumentMoniker": "Endpoints\\AdscripcionesEndpoints.cs",
+              "ToolTip": "C:\\Contra\\sistemas\\Desarrollos\\2025\\Solper\\SolperAPI\\Endpoints\\AdscripcionesEndpoints.cs",
+              "RelativeToolTip": "Endpoints\\AdscripcionesEndpoints.cs",
+              "ViewState": "AgIAABUAAAAAAAAAAAA0wCUAAAA0AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-01T19:36:40.266Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Contra\\sistemas\\Desarrollos\\2025\\Solper\\SolperAPI\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
               "ToolTip": "C:\\Contra\\sistemas\\Desarrollos\\2025\\Solper\\SolperAPI\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAD4AAAAAAAAAAIA1wEIAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAA7AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-21T15:00:30.887Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 4,
               "Title": "appsettings.Development.json",
               "DocumentMoniker": "C:\\Contra\\sistemas\\Desarrollos\\2025\\Solper\\SolperAPI\\appsettings.Development.json",
               "RelativeDocumentMoniker": "appsettings.Development.json",

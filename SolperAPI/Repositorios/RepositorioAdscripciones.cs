@@ -36,7 +36,7 @@ namespace SolperAPI.Repositorios
             //Sin paginación
             //return await context.Adscripciones.OrderBy(a => a.Nombre).ToListAsync(); 
             //Con paginación
-            return await queryable.OrderBy(a => a.Nombre).Paginar(paginacionDTO).ToListAsync();
+            return await queryable.OrderBy(a => a.Id).Paginar(paginacionDTO).ToListAsync();
         }
 
         public async Task<List<Adscripcion>> ObtenerPorNombre(string nombre)

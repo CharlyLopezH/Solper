@@ -1,7 +1,8 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 //import App from './App'
-import ConexionConTablaDesign from './ConexionConTablaDesign'
+//import ConexionConTablaDesign from './ConexionConTablaDesign'
+import IndexAdscripciones from './demos/IndexAdscripciones'
 //import './index.css'
 
 
@@ -9,6 +10,6 @@ import ConexionConTablaDesign from './ConexionConTablaDesign'
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
-  <ConexionConTablaDesign/>
+  <IndexAdscripciones/>
   </StrictMode>
 )

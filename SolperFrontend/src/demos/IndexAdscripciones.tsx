@@ -3,37 +3,18 @@
 //Presentación de Datos con Diseño
 import axios, { AxiosResponse } from "axios";
 import { useEffect, useState } from "react";
-import { adscripcionDTO } from "./demos/adscripciones.model";
+import { adscripcionDTO } from "./adscripciones.model";
 import { FaEdit, FaTrash, FaPlus } from "react-icons/fa";
+import { urlAdscripciones } from "../utils/endpoints";
+import Paginacion from "../utils/paginador/Paginacion";
 
 
 const ConexionConTablaDesign = ()=>{
 
   const [respuestaData,setRespuestaData]=useState<adscripcionDTO[]>([]);
-
-  useEffect(() => {
-    console.log('UseEffect')
-    const fetchData = async () => {
-    try {
-
-      // Petición con manejo de errores
-      const response: AxiosResponse<adscripcionDTO[]> = await axios.get('https://localhost:7167/adscripciones', {
-        params: {
-          pagina: 1,
-          recordsPorPagina: 5
-        }
-      });
-      console.log("Haciendo el Get Respuesta: "+JSON.stringify(response.data, null, 2));
-                  // Procesamiento de la respuesta
-                  console.log('Datos recibidos del API:', response.data);
-                  //Mete la respuesta a la variable de estado
-                  setRespuestaData(response.data)
-    } catch (error) {
-      
-    }
-  }
-   fetchData(); 
-  },[]);
+  const [totalDePaginas,setTotalDePaginas]=useState(0);
+  const [recordsPorPagina, setRecordsPorPagina]=useState(5);
+  const [pagina,setPagina]=useState(1);
 
     // Handlers para acciones (implementa tu lógica)
     const handleEditar = (id: number) => {
@@ -50,16 +31,51 @@ const ConexionConTablaDesign = ()=>{
       console.log("Crear nuevo registro");
       // Ejemplo: navegar a `/nuevo`
     };
+
+  useEffect(() => {
+    //console.log('UseEffect')
+    const fetchData = async () => {
+    try {
+
+      // Petición con manejo de errores
+      //Ruta completa del endpoint antes de configurar el archivo .env (dev / prod)
+      //const response: AxiosResponse<adscripcionDTO[]> = await axios.get('https://localhost:7167/adscripciones', {
+      //Ruta del endpoint ajustada para utilizar la información del archivo .env (prod / dev) ver: .env.development + endpoints.ts
+      //console.log('urlAdscripciones ',urlAdscripciones);
+        const response: AxiosResponse<adscripcionDTO[]> = await axios.get(urlAdscripciones, {
+        params: {
+          pagina,
+          recordsPorPagina,
+
+        }
+      });
+      const totalDeRegistros=parseInt(response.headers['cantidadtotalregistros'],10)
+      setTotalDePaginas(Math.ceil(totalDeRegistros/recordsPorPagina))
+      //console.log('DATA',response.data)
+      //console.log("Haciendo el Get Respuesta: "+JSON.stringify(response.data, null, 2));
+                  // Procesamiento de la respuesta
+                  //console.log('Datos recibidos del API:', response.data);
+                  //Mete la respuesta a la variable de estado
+                  setRespuestaData(response.data)
+    } catch (error) {
+      
+    }
+  }
+   fetchData(); 
+  },[pagina, recordsPorPagina]);
+
   return(
   <>
   <h3>
-    Prueba de conexión Axios y representación de tabla
+    Índice de Adscripciones de tabla con páginación
   </h3>
   <hr/>
 
   <div className="container mt-4">
       <h2 className="mb-4">📋 Adscripciones</h2>
-      
+
+      <Paginacion paginaActual={pagina} cantidadTotalDePaginas={totalDePaginas} radio={3} onChange={nuevaPagina=> setPagina(nuevaPagina) }
+          />      
       {/* Tabla */}
       <div className="table-responsive">
         <table className="table table-hover table-bordered">

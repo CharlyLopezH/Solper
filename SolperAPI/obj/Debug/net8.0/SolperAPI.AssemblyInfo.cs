@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("SolperAPI")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8480b152ffb17fe76519fd2c63c3ae8a0d082b67")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8b7fa64dd3745c075df1aa5002cdb3cc3987f648")]
 [assembly: System.Reflection.AssemblyProductAttribute("SolperAPI")]
 [assembly: System.Reflection.AssemblyTitleAttribute("SolperAPI")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

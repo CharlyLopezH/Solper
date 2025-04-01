@@ -20,9 +20,11 @@ builder.Services.AddCors(opciones =>
 {
     opciones.AddPolicy("CorsPolicy", policy =>
     {
+        var frontendURL = builder.Configuration.GetValue<string>("frontend_url");
         policy.WithOrigins(frontend_url)
           .AllowAnyHeader()
           .AllowAnyMethod()
+          .WithExposedHeaders(new string[] {"cantidadtotalregistros"})
           .AllowCredentials(); // Si usas cookies/auth
 
         // Para desarrollo, puedes permitir varios orígenes:
